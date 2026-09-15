@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Police Vigil-ATP</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background-color: #f4f7f6;
-    }
-    iframe {
-      position: absolute;
-      top: -42px; /* Shifts Google's 40px banner above the visible screen */
-      left: 0;
-      width: 100%;
-      height: calc(100% + 42px);
-      border: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLICE VIGIL</title>
+    <style>
+        /* This ensures the iframe takes up the full space of the container */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh; /* Full Viewport Height */
+            overflow: hidden; /* Prevents double scrollbars */
+            background-color: #f4f6f9;
+        }
+        
+        /* The iframe wrapper */
+        .app-container {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-  <!-- Replace with your deployed Web App exec URL -->
-  <iframe src="https://script.google.com/macros/s/AKfycbwFWPNql7b5iSAl5n8ZgtW-7tWz5gax1wcUJ5uIEcm2CnD4BFKWmqS_5Ix9IparGidJ/exec" allow="geolocation; camera"></iframe>
+
+    <iframe 
+        class="app-container" 
+        src="https://script.google.com/macros/s/AKfycbwQ1ZMMmZt0co6idxcP5curOuvsNVI6RRVB2tgr-T11mtL2wjUph8JtqlykVgrIpwAy/exec" 
+        allowfullscreen="true" 
+        sandbox="allow-scripts allow-same-origin allow-popups allow-forms">
+    </iframe>
+
 </body>
 </html>
