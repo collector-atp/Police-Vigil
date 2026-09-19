@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POLICE VIGIL – Ananthapuramu District</title>
-    <style>
-        /* This ensures the iframe takes up the full space of the container */
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100vh; /* Full Viewport Height */
-            overflow: hidden; /* Prevents double scrollbars */
-            background-color: #f4f6f9;
-        }
-        
-        /* The iframe wrapper */
-        .app-container {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>POLICE VIGIL - Ananthapuramu District</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #020617;
+    }
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-
-    <iframe 
-        class="app-container" 
-        src="https://script.google.com/macros/s/AKfycbxa5m6DNgRNYqHmT7kpIoWtL4O1pxlnbzuauWwEfHfUVhLLSZ6gSaEEsILS-Yo_4PGc/exec" 
-        allowfullscreen="true" 
-        sandbox="allow-scripts allow-same-origin allow-popups allow-forms">
-    </iframe>
-
+  <!-- Replace the URL below with your actual deployed Google Apps Script Web App URL -->
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbxa5m6DNgRNYqHmT7kpIoWtL4O1pxlnbzuauWwEfHfUVhLLSZ6gSaEEsILS-Yo_4PGc/exec" 
+    allow="geolocation; camera; accelerometer; gyroscope; encrypted-media;"
+    allowfullscreen>
+  </iframe>
 </body>
 </html>
